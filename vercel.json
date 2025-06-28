@@ -1,0 +1,35 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run notion:sync && npm run build",
+  "env": {
+    "NOTION_TOKEN": "@notion-token",
+    "NOTION_SOURCE_DB": "@notion-source-db",
+    "NOTION_SCRIPTS_DB": "@notion-scripts-db",
+    "NOTION_ASSETS_DB": "@notion-assets-db",
+    "NOTION_CONFIG_PAGE_ID": "@notion-config-page"
+  },
+  "functions": {
+    "src/pages/api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ]
+}
