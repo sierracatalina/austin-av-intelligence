@@ -121,11 +121,6 @@ austin-av-intelligence/
 
 ### Configuration Management
 - `GET /api/config` - Fetch live configuration from Notion
-- `POST /api/status` - Update deployment status in Notion
-
-### Data Integration  
-- `GET /api/source-files` - Get tracked source files
-- `GET /api/automation-scripts` - Get active automation scripts
 
 ## 🚀 **Deployment**
 

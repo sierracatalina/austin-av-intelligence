@@ -1,1 +1,8 @@
-{\n  \"framework\": \"nextjs\",\n  \"functions\": {\n    \"src/pages/api/**/*.js\": {\n      \"maxDuration\": 10\n    }\n  }\n}
+{
+  "framework": "nextjs",
+  "functions": {
+    "src/pages/api/**/*.js": {
+      "maxDuration": 10
+    }
+  }
+}
