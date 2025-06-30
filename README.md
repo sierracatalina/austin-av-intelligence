@@ -133,7 +133,7 @@ austin-av-intelligence/
 1. Connect GitHub repo to Vercel
 2. Add environment variables in Vercel dashboard
 3. Every push to `main` triggers automatic deployment
-4. Notion databases update with deployment status
+4. Notion databases **are updated** with deployment status
 
 ### Manual Deployment
 ```bash
