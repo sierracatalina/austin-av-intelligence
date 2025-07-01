@@ -5,7 +5,7 @@ node_modules
 .next
 
 # Environment variables
-.env.local
+.env*
 
 # Package lock file
 package-lock.json 
