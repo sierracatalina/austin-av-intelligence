@@ -84,7 +84,7 @@ https://notion.so/workspace/{database-id}?v={view-id}
 ```
 
 ### 4. Configure Environment
-Update `.env.local` with your tokens and IDs:
+Update `.env` with your tokens and IDs:
 ```env
 NOTION_TOKEN=secret_your_token_here
 NOTION_SOURCE_DB=your_source_database_id
